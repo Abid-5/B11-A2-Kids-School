@@ -32,12 +32,66 @@
   background-color: var(--black);
   border-radius: 12px;
   padding: 10px 47px;
+  border: none;
+}
+
+/** nav section styles */
+
+.nav-container {
+  justify-content: space-between;
+  padding: 0 140px;
+  align-items: center;
+}
+
+.nav-container .logo {
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-container img {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  gap: 32px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+#nav-home {
+  color: var(--primary-color);
+}
+#nav-about {
+  color: var(--secondary-color);
+}
+#nav-facilities {
+  color: #05d4df;
+}
+#nav-admission {
+  color: #5d58ef;
+}
+
+.fa-bars {
+  display: none;
+}
+
+.nav-container .btn-primary {
+  background-color: var(--primary-color);
 }
 
 /** Banner section styles */
 
 .banner-container {
-  margin: 0 140px;
+  padding: 0 140px;
   gap: 50px;
   align-items: center;
 }
@@ -203,11 +257,28 @@
 
 /** Responsive: small device  */
 @media screen and (max-width: 576px) {
+  /** nav section styles */
+
+  .nav-container {
+    padding: 12px 16px;
+  }
+
+  .logo-text,
+  nav,
+  .btn-primary {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+    font-size: 32px;
+  }
+
   /** banner section */
   .banner-container {
     flex-direction: column-reverse;
     text-align: center;
-    padding: 0px;
+    padding: 8px 16px 0px;
   }
 
   .banner-text-container h1,
