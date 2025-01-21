@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+/** Shared styles */
+:root {
+  --primary-color: #fea301;
+  --secondary-color: #01acfd;
+  --black: #111111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.btn-primary {
+  font-size: 20px;
+  color: white;
+  background-color: var(--black);
+  border-radius: 12px;
+  padding: 10px 47px;
+}
+
+/** Banner section styles */
+.banner-container {
+  margin: 0 140px;
+  gap: 50px;
+  align-items: center;
+}
+.banner-container h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: var(--black);
+}
+
+#empowering {
+  color: var(--primary-color);
+}
+#vision {
+  color: var(--secondary-color);
+}
+
+.banner-container p {
+  font-size: 1.25rem;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+
+.banner-container img{
+    width: 100%;
+}
+
+/** Responsive: small device  */
+@media screen and (max-width: 576px) {
+  .banner-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: 0px;
+  }
+  /* .banner-container h1, .banner-container p{
+        font-size: 2rem;
+    } */
+  .banner-text-container h1,
+  .banner-text-container p {
+    padding: 0px 16px;
+  }
+}
