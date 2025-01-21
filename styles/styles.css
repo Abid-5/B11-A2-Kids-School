@@ -143,15 +143,13 @@
   gap: 10px;
   margin-bottom: 60px;
 }
-.arrow {
+.arrow-container button {
   background-color: var(--primary-color);
   border-radius: 50%;
+  border: none;
   color: white;
   width: 60px;
   height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 1.5rem;
   font-weight: bold;
 }
