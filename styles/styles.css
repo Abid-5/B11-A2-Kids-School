@@ -217,7 +217,10 @@ nav ul li {
     ),
     url(../assets/bg.png);
   background-repeat: no-repeat;
-  /* background-size: cover; */
+}
+
+.nav-container .btn-primary {
+  padding: 6px 24px;
 }
 
 .stories-section h1 {
@@ -255,17 +258,85 @@ nav ul li {
   padding: 80px 0 60px;
 }
 
+.story-content div {
+  position: relative;
+  top: -50px;
+}
+
+.story-card button {
+  border-radius: 48px;
+  border: none;
+  padding: 15px 20px;
+  font-weight: 500;
+  color: white;
+  background-color: #95b226;
+}
+
+.big-story button {
+  background-color: #3cd8e8;
+}
+
+.purple-button button {
+  background-color: #5d58f0;
+}
+
+/** footer section styling  */
+footer {
+  background-color: #01acfd;
+  padding: 122px 140px 180px;
+  color: white;
+  justify-content: space-between;
+}
+
+footer img {
+  width: 100%;
+}
+
+footer > div {
+  max-width: 30%;
+}
+
+footer .logo {
+  margin-bottom: 36px;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: white;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer .about h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+footer .about li {
+  margin-bottom: 20px;
+}
+
+footer .social h3 {
+  margin-bottom: 32px;
+}
+footer .social div {
+  gap: 11px;
+}
+
 /** Responsive: small device  */
 @media screen and (max-width: 576px) {
   /** nav section styles */
 
   .nav-container {
     padding: 12px 16px;
+    border-bottom: 1px solid var(--primary-color);
   }
 
   .logo-text,
   nav,
-  .btn-primary {
+  .nav-container .btn-primary {
     display: none;
   }
 
@@ -314,5 +385,23 @@ nav ul li {
   }
   .stories-section .button {
     padding: 20px 0 40px;
+  }
+
+  /** footer section  */
+  footer {
+    flex-direction: column;
+    padding: 65px 16px 60px;
+  }
+  footer > div {
+    max-width: fit-content;
+  }
+  footer .education img {
+    width: auto;
+  }
+  footer .education {
+    margin-bottom: 32px;
+  }
+  footer .about {
+    margin-bottom: 20px;
   }
 }
